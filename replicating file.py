@@ -2,7 +2,7 @@ while True:
     import os
     import string
     import random
-    fileName = str(os.path.splitext( os.path.basename(__file__))[0])+'.py'
+    filename = str(os.path.splitext( os.path.basename(__file__))[0])+'.py'
     name = str(''.join(random.choice(string.hexdigits) for i in range(100)))+'.txt'
     text = open(filename, 'r').read()
     f = open(name, 'w')
